@@ -1,1 +1,23 @@
 Project Meetings Notes
+
+Meeting 1 - 23/10/2024
+
+Participants: Daniel Caridade, Gonçalo Teles, Gonçalo Peres, João
+
+What we decided: Division of the report.
+
+Work division:
+
+1. Introduction (adicionar a info do Data Content)  - Peres
+2. Missing Values - Daniel
+3. Descriptive Statistics - Peres
+4. Incoherences - João
+5a. Univariate Feature Exploration (Numeric Features) - Teles
+5b. Univariate Feature Exploration (Categorical Features) - João
+6. Additional Feature Exploration - João
+7. Multivariate Analysis - Teles 
+8. References - Daniel
+
+--------------------------------------------------------------------------//-----------------------------------------------------------------------------------
+
+Meeting 2 - 
