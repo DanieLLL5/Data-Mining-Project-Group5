@@ -1,0 +1,32 @@
+What I am doing in the code:
+
+Incoherences
+  1. customer_region - transformed  '-' into Unknown
+  2. last_promo - transformed '-' into the string 'NONE' (I can change this into NO PROMOTION if we want)
+  3. Deleted all the customers that have 0 as value in the columns of DOW_, HR_ and CUI_, since they are non customers
+Things I might still do: Remove lost customers or not active customers, like the ones that only did 1 purchase
+
+Feature Engeneering
+  1. Joined columns DOW_1 to DOW_5 into a single feature called Orders_Weekday
+  2. Joined columns DOW_0 and DOW_6 into a single feature called Orders_Weekend
+  3. Joined columns CUI_Chinese, CUI_Noodle Dishes and CUI_Chiken Dishes into CUI_Chinese
+  4. Created features CUI_SoutheastAsia that is the sum od CUI_Indian and CUI_Thai
+  5. Created feature CUI_Western that aggregates columns CUI_American and CUI_Italian
+  6. Created feature CUI_Street_Food_Beverages that aggregates columns CUI_Street Food / Snacks and CUI_Beverages
+  7. Created feature Early Morning that aggregates columns HR_5 to HR_8
+  8. Created feature Morning that aggregates columns HR_9 to HR_11
+  9. Created feature Afternoon that aggregates columns HR_12 to HR_16
+  10. Created feature Evening that aggregates columns HR_17 to HR_20
+  11. Created feature Night that aggregates columns HR_21 to HR_4
+  12. Created dummies of the column last_promo (this created features last_promo_DISCOUNT, last_promo_FREEBIE, last_promo_NONE) so 0, 0, 0 means DELIVERY
+  13. Created dummies of the column payment_method (this created features payment_method_CASH, and payment_method_DIGI) so 0, 0, 0 means CREDIT CARD
+  14. Created a new feature Chain_Frequency_Category that uses is chain and classifies them based on the frequency customers go there
+  15. Used Ordinal Encoding to turn those categories into numbers
+  16. Agregated the values "2440", "4140", "8370", "2490", "8550" into a single category "Other"
+  17. Created dummies for the customer_region (this created features customer_region_4660, customer_region_8670, customer_region_Other) so 0, 0, 0 means region 2360
+
+Handling Missing Values 
+  1. Dropped unecessary columns ()
+  2. 
+  3. 
+  4. 
