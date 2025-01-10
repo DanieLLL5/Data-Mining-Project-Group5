@@ -1,4 +1,4 @@
-# Customer Segmentation Machine Learning Project
+# Customer Segmentation Data Mining Project - Group 5
 
 This repository contains all the resources for our **Customer Segmentation** project of ficticious company ABCDEats Inc. The project aims to analyse customer data, perform clustering segmentation, and build an interactive platform to visualize and explore the results. The repository includes datasets, notebooks, reports, and visualizations produced during the project.
 
