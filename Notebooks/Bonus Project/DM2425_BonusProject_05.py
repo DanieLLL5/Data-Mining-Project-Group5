@@ -8,8 +8,12 @@ import seaborn as sns
 from sklearn.manifold import TSNE
 import numpy as np
 
+# Use the raw file URL from your GitHub repository
+url = 'https://raw.githubusercontent.com/DanieLLL5/Data-Mining-Project-Group5/main/Datasets/dataset_with_clusters.csv'
+data = pd.read_csv(url)
+
 # Load Dataset
-data = pd.read_csv('/Users/goncaloperes/Downloads/dataset_with_clusters (1).csv')
+#data = pd.read_csv('/Users/goncaloperes/Downloads/dataset_with_clusters (1).csv')
 
 # Data Preparation
 data['cluster_labels'] = data['cluster_labels'].astype(str)  # Ensure cluster labels are strings
